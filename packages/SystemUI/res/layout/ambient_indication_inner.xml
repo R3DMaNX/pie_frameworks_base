@@ -13,7 +13,7 @@
     android:layout_marginEnd="64.0dip"
     android:forceHasOverlappingRendering="false">
 
-    <havoc.support.lottie.LottieAnimationView
+    <six.support.lottie.LottieAnimationView
         android:id="@+id/ambient_indication_icon"
         android:layout_width="36dp"
         android:layout_height="36dp"

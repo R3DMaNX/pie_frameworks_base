@@ -53,7 +53,7 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
     android-slices-builders \
     android-arch-core-runtime \
     android-arch-lifecycle-extensions \
-    havoc-support-lottie
+    six-support-lottie
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
     SystemUI-tags \

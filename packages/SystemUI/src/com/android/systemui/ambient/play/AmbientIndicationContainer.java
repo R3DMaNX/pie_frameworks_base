@@ -21,7 +21,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import havoc.support.lottie.LottieAnimationView;
+import six.support.lottie.LottieAnimationView;
 
 import com.android.systemui.AutoReinflateContainer;
 import com.android.systemui.R;

@@ -34,7 +34,7 @@
         android:layout_gravity="bottom|center_horizontal"
         android:orientation="vertical">
 
-        <havoc.support.lottie.LottieAnimationView
+        <six.support.lottie.LottieAnimationView
             android:id="@+id/charging_indication"
             android:layout_width="@dimen/keyguard_charging_indication_width"
             android:layout_height="@dimen/keyguard_charging_indication_height"

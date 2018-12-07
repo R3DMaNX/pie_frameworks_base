@@ -57,7 +57,7 @@ import com.android.systemui.statusbar.policy.UserInfoController;
 import com.android.systemui.util.wakelock.SettableWakeLock;
 import com.android.systemui.util.wakelock.WakeLock;
 
-import havoc.support.lottie.LottieAnimationView;
+import six.support.lottie.LottieAnimationView;
 
 import java.io.FileDescriptor;
 import java.io.PrintWriter;

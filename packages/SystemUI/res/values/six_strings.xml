@@ -19,11 +19,11 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Heads Up QS Tile -->
-    <string name="quick_settings_heads_up_label">Heads Up</string>
-    <string name="accessibility_quick_settings_heads_up_off">Heads Up</string>
-    <string name="accessibility_quick_settings_heads_up_on">Heads Up</string>
-    <string name="accessibility_quick_settings_heads_up_changed_off">Heads up turned off</string>
-    <string name="accessibility_quick_settings_heads_up_changed_on">Heads up turned on</string>
+    <string name="quick_settings_heads_up_label">Heads-Up</string>
+    <string name="accessibility_quick_settings_heads_up_off">Heads-Up</string>
+    <string name="accessibility_quick_settings_heads_up_on">Heads-Up</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Heads-up turned off</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Heads-up turned on</string>
 	
     <!-- HW Keys Tile -->
     <string name="accessibility_quick_settings_hwkeys_on">HW Keys</string>
@@ -179,7 +179,7 @@
     <string name="quick_settings_usb_tether_label">USB tethering</string>
 
     <!-- Havoc Tile -->
-    <string name="quick_settings_havoc_label">Havoc Settings</string>
+    <string name="quick_settings_havoc_label">Six Settings</string>
 
     <string name="quick_settings_reboot_label">Reboot</string>
     <string name="quick_settings_reboot_recovery_label">Recovery</string>

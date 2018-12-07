@@ -350,7 +350,7 @@ public final class Settings {
         public void forceCurrent() {
             sdkVersion = Build.VERSION.SDK_INT;
             databaseVersion = CURRENT_DATABASE_VERSION;
-            fingerprint = Build.HAVOC_FINGERPRINT;
+            fingerprint = Build.SIX_FINGERPRINT;
         }
     }
 
@@ -3157,7 +3157,7 @@ public final class Settings {
         // on update drop the files before loading them.
         if (PackageManagerService.CLEAR_RUNTIME_PERMISSIONS_ON_UPGRADE) {
             final VersionInfo internal = getInternalVersion();
-            if (!Build.HAVOC_FINGERPRINT.equals(internal.fingerprint)) {
+            if (!Build.SIX_FINGERPRINT.equals(internal.fingerprint)) {
                 for (UserInfo user : users) {
                     mRuntimePermissionsPersistence.deleteUserRuntimePermissionsFile(user.id);
                 }
@@ -5145,7 +5145,7 @@ public final class Settings {
         }
 
         public void onDefaultRuntimePermissionsGrantedLPr(int userId) {
-            mFingerprints.put(userId, Build.HAVOC_FINGERPRINT);
+            mFingerprints.put(userId, Build.SIX_FINGERPRINT);
             writePermissionsForUserAsyncLPr(userId);
         }
 
@@ -5309,7 +5309,7 @@ public final class Settings {
                 serializer.endDocument();
                 destination.finishWrite(out);
 
-                if (Build.HAVOC_FINGERPRINT.equals(fingerprint)) {
+                if (Build.SIX_FINGERPRINT.equals(fingerprint)) {
                     mDefaultPermissionsGranted.put(userId, true);
                 }
             // Any error while writing is fatal.
@@ -5421,7 +5421,7 @@ public final class Settings {
                     case TAG_RUNTIME_PERMISSIONS: {
                         String fingerprint = parser.getAttributeValue(null, ATTR_FINGERPRINT);
                         mFingerprints.put(userId, fingerprint);
-                        final boolean defaultsGranted = Build.HAVOC_FINGERPRINT.equals(fingerprint);
+                        final boolean defaultsGranted = Build.SIX_FINGERPRINT.equals(fingerprint);
                         mDefaultPermissionsGranted.put(userId, defaultsGranted);
                     } break;
 
