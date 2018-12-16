@@ -79,10 +79,10 @@
     <color name="quick_settings_theme_tile_color_french_bleu">#2856ff</color>
     <color name="quick_settings_theme_tile_color_cold_bleu">#2e86cd</color>
     <color name="quick_settings_theme_tile_color_heirloom_bleu">#327ccb</color>
-    <color name="quick_settings_theme_tile_color_not_impressive_purple">#8522ff</color>
-    <color name="quick_settings_theme_tile_color_footprint_purple">#3c5ae0</color>
-    <color name="quick_settings_theme_tile_color_dusk_purple">#b7095a</color>
-    <color name="quick_settings_theme_tile_color_illusions_purple">#a02963</color>
+    <color name="quick_settings_theme_tile_color_not_impressive_purple">#5d8aa8</color>
+    <color name="quick_settings_theme_tile_color_footprint_purple">#5e616f</color>
+    <color name="quick_settings_theme_tile_color_dusk_purple">#6d8561</color>
+    <color name="quick_settings_theme_tile_color_illusions_purple">#6b8e23</color>
     <color name="quick_settings_theme_tile_color_dreamy_purple">#7278e5</color>
     <color name="quick_settings_theme_tile_color_spooked_purple">#822b6b</color>
     <color name="quick_settings_theme_tile_color_tru_fil_pink">#746cc0</color>
