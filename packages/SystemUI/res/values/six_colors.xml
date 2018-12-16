@@ -74,7 +74,7 @@
     <color name="quick_settings_theme_tile_color_stock">#009688</color>
     <color name="quick_settings_theme_tile_color_seaside_mint">#01c18c</color>
     <color name="quick_settings_theme_tile_color_move_mint">#46ff99</color>
-    <color name="quick_settings_theme_tile_color_diff_day_green">#97f456</color>
+    <color name="quick_settings_theme_tile_color_diff_day_green">#b284be</color>
     <color name="quick_settings_theme_tile_color_obfuscated_bleu">#0042ba</color>
     <color name="quick_settings_theme_tile_color_french_bleu">#2856ff</color>
     <color name="quick_settings_theme_tile_color_cold_bleu">#2e86cd</color>
