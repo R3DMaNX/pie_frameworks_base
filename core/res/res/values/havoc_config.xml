@@ -20,9 +20,9 @@
 
     <!-- Power menu -->
     <string-array translatable="false" name="config_custom_globalActionsList">
+        <item>advanced</item>
         <item>power</item>
         <item>restart</item>
-        <item>advanced</item>
         <item>lockdown</item>
         <item>screenshot</item>
         <item>screenrecord</item>
