@@ -92,7 +92,7 @@
     <color name="quick_settings_theme_tile_color_new_house_orange">#f25555</color>
     <color name="quick_settings_theme_tile_color_warmth_orange">#ff6f20</color>
     <color name="quick_settings_theme_tile_color_mania_amber">#f6ca11</color>
-    <color name="quick_settings_theme_tile_color_cold_yellow">#efe3a8</color>
+    <color name="quick_settings_theme_tile_color_cold_yellow">#daa520</color>
 
     <!-- Recents membar text color -->
     <color name="recents_membar_text_color">@android:color/white</color>

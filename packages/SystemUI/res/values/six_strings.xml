@@ -297,7 +297,7 @@
     <string name="quick_settings_theme_tile_color_new_house_orange">New house orange</string>
     <string name="quick_settings_theme_tile_color_warmth_orange">Warmth orange</string>
     <string name="quick_settings_theme_tile_color_mania_amber">Mania Amber</string>
-    <string name="quick_settings_theme_tile_color_cold_yellow">Cold summer yellow</string>
+    <string name="quick_settings_theme_tile_color_cold_yellow">Goldenrod</string>
     <string name="theme_info_title">What is this?</string>
     <string name="theme_info_message">The Themes tile is a unique but easy to use tile that allows the user to change the system accent or style.\n\nTo change between accents and styles, simply long press on the tile and then press again to select from the options offered.</string>
 
