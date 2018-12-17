@@ -275,4 +275,9 @@
 
   <!-- Old QTI Blobs -->
   <java-symbol type="bool" name="config_oldQtiTelephony" />
+
+  <!-- Fast Charging Led Supported -->
+  <java-symbol type="bool" name="config_FastChargingLedSupported" />
+  <java-symbol type="integer" name="config_notificationsFastBatteryARGB" />
+
 </resources>
