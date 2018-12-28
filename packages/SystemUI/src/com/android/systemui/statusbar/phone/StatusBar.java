@@ -5525,7 +5525,26 @@ public class StatusBar extends SystemUI implements DemoMode,
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.QS_PANEL_BG_COLOR_WALL),
                     false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_LAYOUT_ROWS),
+                    false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_LAYOUT_ROWS_LANDSCAPE),
+                    false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_LAYOUT_COLUMNS),
+                    false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_LAYOUT_COLUMNS_LANDSCAPE),
+                    false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_QUICKBAR_COLUMNS),
+                    false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_TILE_TITLE_VISIBILITY),
+                    false, this, UserHandle.USER_ALL);
         }
+
         @Override
         public void onChange(boolean selfChange, Uri uri) {
             super.onChange(selfChange, uri);
@@ -5586,6 +5605,13 @@ public class StatusBar extends SystemUI implements DemoMode,
                     uri.equals(Settings.System.getUriFor(Settings.System.QS_PANEL_BG_COLOR)) ||
                     uri.equals(Settings.System.getUriFor(Settings.System.QS_PANEL_BG_COLOR_WALL))) {
                 mQSPanel.getHost().reloadAllTiles();
+            } else if (uri.equals(Settings.System.getUriFor(Settings.System.QS_LAYOUT_ROWS)) ||
+                    uri.equals(Settings.System.getUriFor(Settings.System.QS_LAYOUT_ROWS_LANDSCAPE)) ||
+                    uri.equals(Settings.System.getUriFor(Settings.System.QS_LAYOUT_COLUMNS)) ||
+                    uri.equals(Settings.System.getUriFor(Settings.System.QS_LAYOUT_COLUMNS_LANDSCAPE)) ||
+                    uri.equals(Settings.System.getUriFor(Settings.System.QS_QUICKBAR_COLUMNS)) ||
+                    uri.equals(Settings.System.getUriFor(Settings.System.QS_TILE_TITLE_VISIBILITY))) {
+                setQsRowsColumns();            
             }
         }
 
@@ -5604,6 +5630,7 @@ public class StatusBar extends SystemUI implements DemoMode,
             updateTickerAnimation();
             updateTickerTickDuration();
             setUseLessBoringHeadsUp();
+            setQsRowsColumns();
         }
     }
 
@@ -5619,6 +5646,14 @@ public class StatusBar extends SystemUI implements DemoMode,
         else if (batterySaverDarkState == 1 & mBatteryController.isPowerSave())
             mContext.getSystemService(UiModeManager.class)
                 .setNightMode(UiModeManager.MODE_NIGHT_YES);
+    }
+
+    private void setQsRowsColumns() {
+        if (mQSPanel != null) {
+            mQSPanel.updateResources();
+            mQSPanel.updateSettings();
+            mQuickQSPanel.updateSettings();
+        }
     }
 
     private void setHeadsUpStoplist() {
